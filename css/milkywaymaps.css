@@ -1,0 +1,165 @@
+*{
+	margin: 0 auto 0 auto;
+}
+
+html {
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-repeat:repeat-x;
+}
+
+#wrapper {
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+}
+
+#social {
+	margin:0;
+	padding:0;
+	text-align:center;
+	height:32px;
+	background-color:#000000;
+}
+
+ul.social, ul.social li {
+	margin:0;
+	padding:0;
+	height:32px;
+	list-style: none;
+	text-decoration:none;
+}
+
+ul.social li {
+	display: inline-block;
+}
+
+.icon {
+	height:32px;
+	display:block;
+	background-repeat:no-repeat;
+}
+
+.facebook {background-image:url("../images/facebook.png"); background-repeat:no-repeat;}
+.twitter {background-image:url("../images/twitter.png"); background-repeat:no-repeat;}
+.youtube {background-image:url("../images/youtube.png"); background-repeat:no-repeat;}
+.soundcloud {background-image:url("../images/soundcloud.png"); background-repeat:no-repeat;}
+
+.social li a {width:32px; height:32px;}
+
+.social li a strong {
+	position:absolute;
+	left:5px; top:-1px;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.75);
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius:3px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.social:hover li { opacity:0.2; }
+
+.social li {transition-property: opacity; transition-duration: 500ms;}
+
+.social li a strong { opacity:0; transition-property: opacity, top; transition-duration: 300ms;}
+.social li:hover { opacity:1;}
+.social li:hover a strong { opacity:1; top:10px;}
+
+#header {
+	width:960px;
+	height:85px;
+	display:block;
+	z-index:2;
+	position:relative;
+}
+
+div.logo {
+	content:url('images/logo.png');
+	width:230px;
+	height:85px;
+	display:inline;
+	float:left;
+}
+
+#nav {
+	width:730px;
+	height:85px;
+	display:inline;
+	float:left;
+}
+
+ul#nav, ul#nav li {
+	list-style:none;
+	display:inline;
+	font-size:18px;
+}
+
+#nav a:link, a:visited, a:active {
+	color:#fff; opacity:0.8;
+	text-decoration:none;
+}
+
+#nav a:hover {
+	color:#fff; opacity:0.5;
+}
+
+#home_section {
+	width:1920px;
+	height:900px;
+	position:absolute;
+	z-index:1;
+}
+
+#container {
+	width:960px;
+	height:800px;
+	max-height:963px;
+	background-color:#fff; opacity:0.5;
+	text-align:center;
+	border-radius:10px;
+	position:relative;
+	z-index:2;
+}
+
+#container_col1 {
+	float:left;
+	width:50%;
+	margin:10px 0 0 0;
+	text-align:center;
+	display:inline;
+}
+
+#container_col2 {
+	float:left;
+	width:50%;
+	margin:10px 0 0 0;
+	text-align:center;
+	display:inline;
+}
+
+#music_section {
+	width:1920px;
+	height:963px;
+	position:relative;
+	z-index:1;
+	background-image:url(../images/music_bg.jpg); opacity:1.0;
+}
+
+#photo_section {
+	width:1920px;
+	height:963px;
+	position:relative;
+	z-index:1;
+	background-image:url(../images/home_bg.jpg); opacity:1.0;
+}
+
+#contact_section {
+	
+}
+
+#footer {
+
+}
